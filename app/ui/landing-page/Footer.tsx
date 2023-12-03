@@ -1,6 +1,6 @@
 'Use client';
 
-import { Separator } from '@/components/ui/separator';
+import { Separator } from '../separator';
 
 export function Footer() {
   return (

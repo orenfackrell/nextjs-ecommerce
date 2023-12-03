@@ -1,7 +1,7 @@
 'use client';
 
-import { NavMenu } from '@/components/Navbar';
-import { Footer } from '@/components/Footer';
+import { NavMenu } from './ui/landing-page/Navbar';
+import { Footer } from './ui/landing-page/Footer';
 
 export default function Home() {
   return (

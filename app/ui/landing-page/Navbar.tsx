@@ -13,7 +13,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from '@/components/ui/navigation-menu';
+} from '@/app/ui/navigation-menu';
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -50,7 +50,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavMenu() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="place-self-start">
       <NavigationMenuList>
         <Link href="/" legacyBehavior passHref>
           <NavigationMenuLink className={navigationMenuTriggerStyle()}>Homepage</NavigationMenuLink>
