@@ -17,38 +17,34 @@ import {
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: 'Alert Dialog',
-    href: '/docs/primitives/alert-dialog',
-    description:
-      'A modal dialog that interrupts the user with important content and expects a response.',
+    title: 'Glassware',
+    href: '/',
+    description: 'A range of glassware to suit all your spaces.',
   },
   {
-    title: 'Hover Card',
-    href: '/docs/primitives/hover-card',
-    description: 'For sighted users to preview content available behind a link.',
+    title: 'Terrarium Ingredients',
+    href: '/',
+    description: 'All essential minerals and materials for any terrarium.',
   },
   {
-    title: 'Progress',
-    href: '/docs/primitives/progress',
-    description:
-      'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
+    title: 'Terrestrial plants',
+    href: '/',
+    description: 'Find the perfect plant to bring your terrarium to life.',
   },
   {
-    title: 'Scroll-area',
-    href: '/docs/primitives/scroll-area',
+    title: 'Aquatic plants',
+    href: '/',
     description: 'Visually or semantically separates content.',
   },
   {
-    title: 'Tabs',
-    href: '/docs/primitives/tabs',
-    description:
-      'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
+    title: 'Microfauna',
+    href: '/',
+    description: 'These critters will keep your terrarium clean and healthy.',
   },
   {
-    title: 'Tooltip',
-    href: '/docs/primitives/tooltip',
-    description:
-      'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
+    title: 'Terrarium Tools',
+    href: '/',
+    description: 'All the tools needed to build and maintain your terrarium.',
   },
 ];
 
@@ -56,6 +52,9 @@ export function NavMenu() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
+        <Link href="/" legacyBehavior passHref>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()}>Homepage</NavigationMenuLink>
+        </Link>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -66,27 +65,28 @@ export function NavMenu() {
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                    <div className="mb-2 mt-4 text-lg font-medium">shadcn/ui</div>
+                    <div className="mb-2 mt-4 text-lg font-medium">Discover our starter kits</div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and Tailwind CSS.
+                      Hand Crafted by our team, these starter kits are the perfect way to get into
+                      making your own terrarium.
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              <ListItem href="/" title="Introduction">
+                Find out all about the basics from our wonderful team.
               </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
+              <ListItem href="/" title="Beginning">
+                Helpful tips and tricks on how to get you started.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
+              <ListItem href="/" title="Maintenance">
+                Discover best practices to keep your personal ecosystem healthy.
               </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Equipment</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
