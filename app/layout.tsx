@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { inter } from './ui/fonts';
+import { inter } from './components/ui/fonts';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -10,7 +10,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className="w-3/4 h-screen m-auto">
+        <main
+          className={`${inter.className} antialiased flex flex-col content-between justify-between`}
+        >
+          {children}{' '}
+        </main>
+      </body>
     </html>
   );
 }

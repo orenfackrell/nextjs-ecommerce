@@ -1,12 +1,15 @@
 'use client';
 
-import { NavMenu } from './ui/landing-page/Navbar';
-import { Footer } from './ui/landing-page/Footer';
+import { NavMenu } from './components/navbar';
+import { Footer } from './components/footer';
+import { Hero } from './components/hero';
 
 export default function Home() {
   return (
     <>
       <NavMenu />
+
+      <Hero />
       <Footer />
     </>
   );
