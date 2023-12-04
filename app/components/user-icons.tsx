@@ -7,7 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 
 export function UserIcons() {
   return (
-    <div className="flex justify-between w-1/12">
+    <div className="flex justify-end gap-2 w-40">
       <Button variant="outline" className="rounded-full p-0">
         <Avatar>
           <AvatarImage alt="Oren Fackrell" src="./favicon.ico" />

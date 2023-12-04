@@ -7,7 +7,7 @@ import { Hero } from './components/hero';
 
 export default function Home() {
   return (
-    <>
+    <main className="h-screen flex flex-col justify-between">
       <nav className="flex justify-between border-b p-2 mb-2">
         <NavMenu />
         <UserIcons />
@@ -15,6 +15,6 @@ export default function Home() {
 
       <Hero />
       <Footer />
-    </>
+    </main>
   );
 }
