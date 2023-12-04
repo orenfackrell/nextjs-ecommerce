@@ -14,7 +14,9 @@ export function UserIcons() {
           <AvatarFallback>OF</AvatarFallback>
         </Avatar>
       </Button>
-      <ModeToggle />
+      <span>
+        <ModeToggle />
+      </span>
       <Button variant="outline" size="icon" className="flex">
         <ShoppingCart />
       </Button>
