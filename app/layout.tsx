@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased w-screen h-screen m-auto px-4`}>
+      <body className={`${inter.className} antialiased w-fit h-screen m-auto md:px-4`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
