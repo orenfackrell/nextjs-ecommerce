@@ -12,12 +12,12 @@ export function Hero() {
         </p>
         <a href="/" />
       </div>
-      <div className="relative w-full max-w-2xl h-full aspect-video">
+      <div className="relative w-full max-w-xl h-full aspect-video">
         <Image
           className="place-self-end"
           src="/hero-desktop.jpg"
           quality={100}
-          fill
+          fill={true}
           alt="Screenshots of the dashboard project showing desktop version"
         />
       </div>
