@@ -9,11 +9,11 @@ import { NavSheet } from './components/navsheet';
 export default function Home() {
   return (
     <main className="h-screen flex flex-col md:transition-all">
-      <nav className="hidden md:flex justify-between border-b p-2 mb-2">
+      <nav className="hidden md:flex justify-between border-b p-2">
         <NavMenu />
         <UserIcons />
       </nav>
-      <nav className="flex md:hidden justify-between border-b p-2 mb-2">
+      <nav className="flex md:hidden justify-between border-b p-2">
         <NavSheet />
         <UserIcons />
       </nav>
