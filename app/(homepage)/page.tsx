@@ -1,10 +1,11 @@
 'use client';
 
-import { NavMenu } from './components/navbar';
-import { UserIcons } from './components/user-icons';
-import { Footer } from './components/footer';
-import { Hero } from './components/hero';
-import { NavSheet } from './components/navsheet';
+import { NavMenu } from '../components/navbar';
+import { UserIcons } from '../components/user-icons';
+import { Footer } from '../components/footer';
+import { Hero } from '../components/hero';
+import { NavSheet } from '../components/navsheet';
+import BlogCards from '../components/blog-cards';
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
       </nav>
 
       <Hero />
+
+      <BlogCards />
       <Footer />
     </main>
   );
