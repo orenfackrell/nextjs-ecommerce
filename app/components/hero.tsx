@@ -6,9 +6,9 @@ import { LucideArrowBigRightDash } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section className="flex-col flex items-center justify-between w-full lg:h-1/2 lg:h-1/3 md:flex-row p-2">
-      <div className="flex flex-col items-start justify-center w-full h-max p-6 space-y-6">
-        <h1 className="text-4xl font-bold">Discover the Art of Terrariums</h1>
+    <section className="flex-col flex items-center justify-between w-full lg:h-fit md:flex-row p-2">
+      <div className="flex flex-col items-start justify-center w-full p-4 gap-y-2">
+        <h1 className="text-4xl font-bold mt-2">Discover the Art of Terrariums</h1>
         <p className="text-lg">
           Terrarium Emporium is a fictional e-commerce site built with Next.js and Tailwind CSS.
         </p>
@@ -22,7 +22,7 @@ export function Hero() {
           </a>
         </Button>
       </div>
-      <div className="relative w-full max-w-xl lg:h-1/2 lg:h-full aspect-video">
+      <div className="relative w-full max-w-full lg:max-w-2xl aspect-video">
         <Image
           className="place-self-end"
           src="/hero-desktop.jpg"
