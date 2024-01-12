@@ -5,6 +5,6 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function getURL(title) {
+export function getURL(title: string): string {
   return "bg-[url('/" + title + ".jpeg')]";
 }

@@ -2,7 +2,11 @@ import React from 'react';
 import Link from 'next/link';
 import { cn, getURL } from '@/lib/utils';
 
-function StoreCard({ title }) {
+interface StoreCardProps {
+  title: string;
+}
+
+function StoreCard({ title }: StoreCardProps) {
   const img = getURL(title);
   return (
     <div className={cn('w-full h-full bg-cover bg-center rounded-xl', img)}>

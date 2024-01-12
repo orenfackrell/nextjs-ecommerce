@@ -1,7 +1,11 @@
 import React from 'react';
 import { MoveRight } from 'lucide-react';
 
-function BlogCard({ title }) {
+interface BlogCardProps {
+  title: string;
+}
+
+function BlogCard({ title }: BlogCardProps) {
   return (
     <div className="w-full h-full p-4 rounded-3xl shadow border border-opacity-25 flex flex-col justify-start gap-4 inline-flex">
       <div className="flex gap-6 items-center self-stretch text-2xl font-bold leading-[28.80px] underline">
