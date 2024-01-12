@@ -14,7 +14,7 @@ import { Menu } from 'lucide-react';
 export function NavSheet() {
   return (
     <Sheet>
-      <SheetTrigger className="flex p-auto my-auto w-max align-self-start">
+      <SheetTrigger className="flex p-auto my-auto w-max text-white align-self-start">
         <Menu className="h-6 w-6" />
         Terrarium Emporium
       </SheetTrigger>
