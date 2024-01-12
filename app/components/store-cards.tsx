@@ -17,8 +17,8 @@ function StoreCard({ title }) {
 
 export function StoreCards() {
   return (
-    <div className="w-full h-full p-6 bg-white flex-col justify-start items-center gap-6 inline-flex">
-      <div className="text-black text-4xl font-bold leading-[57.60px]">Our Store</div>
+    <div className="w-full h-full p-6 flex-col justify-start items-center gap-6 inline-flex">
+      <div className="text-4xl font-bold leading-[57.60px]">Our Store</div>
 
       <div className="w-full h-[360px] p-2.5 justify-center items-center gap-2.5 inline-flex">
         <StoreCard title={'Glassware'} />
