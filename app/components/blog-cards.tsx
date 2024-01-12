@@ -1,36 +1,33 @@
 import React from 'react';
-import { Card } from './ui/card';
 import { MoveRight } from 'lucide-react';
 
-function BlogCard() {
+function BlogCard({ title }) {
   return (
-    <Card>
-      <div className="content min-h-fit p-8">
-        <div className="flex mb-4 content-center">
-          <a href="/" className="underline text-lg">
-            Blog Title
-          </a>
-          <MoveRight className="ml-2 my-auto" />
-        </div>
-        <div className="flex justify-between min-w-fit w-1/2 text-sm">
-          <p className="align-left w-max mr-4 ">By Author Name</p>
-          <span className="align-right">Read time...</span>
-        </div>
+    <div className="w-full h-full p-4 bg-white rounded-3xl shadow border border-black border-opacity-25 flex flex-col justify-start gap-4 inline-flex">
+      <div className="flex gap-6 items-center self-stretch text-black text-2xl font-bold leading-[28.80px] underline">
+        <a href="/" className="underline flex gap-x-2">
+          {title} <MoveRight />
+        </a>
       </div>
-    </Card>
+      <div className="self-stretch text-black text-base font-normal leading-normal">
+        Lorem ipsum dolor sit amet consectetur. Volutpat consequat in nulla enim amet tellus nec
+        posuere accumsan. Feugiat turpis consectetur magnis tellus pretium nulla massa quis. Ligula
+        ipsum convallis in leo urna sed tempus sit. Convallis amet non justo dui.
+      </div>
+    </div>
   );
 }
 
 export function BlogCards() {
   return (
-    <section className="w-full p-2">
+    <section className="w-full h-full px-6 py-20 bg-white flex-col justify-center items-center gap-6 inline-flex">
       <div className="">
         <h1 className="text-4xl font-bold mt-2">Getting Started</h1>
       </div>
-      <div className="flex flex-col gap-y-4 m-4">
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+      <div className="w-full h-full justify-center items-center gap-6 inline-flex flex-col md:flex-row">
+        <BlogCard title={'Introduction'} />
+        <BlogCard title={'Beginning'} />
+        <BlogCard title={'Maintenance'} />
       </div>
     </section>
   );
